@@ -1,0 +1,585 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior:smooth
+} 
+
+
+.container {
+    background: linear-gradient(orange, rgb(252, 111, 182));
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 2rem 6rem;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1rem;
+}
+
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.k-logo {
+    float: left;
+    width: 50%;
+    max-width: 50px;
+    height: auto;
+}
+
+.navbar {
+    min-height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-item {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 1.3rem;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#menu-icon {
+    width: 30%;
+    max-width: 40px;
+    height: auto;
+    cursor: pointer;
+    float: right;
+    display: none;
+    margin-left: 1.2rem;
+}
+
+
+ /* Hero section */
+
+.hero {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 4.6rem;
+}
+
+.hero .message {
+    position: relative;
+}
+
+.hero .message .welcome-copy {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(252, 111, 182);
+    text-decoration-thickness: 2px 10px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.hero .message .intro-copy-start {
+    font-size: 2rem;
+}
+
+.hero .message .intro-copy-end {
+    font-size: 2rem;
+}
+
+.hero h1 {
+    font-size: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    max-width: 50%;
+    min-width: 282px;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero img {
+    max-width: 85%;
+    height: auto;
+    transition: transform 0.7s;
+}
+
+.hero img:hover {
+    transform: scale(1.03);
+}
+
+span {
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-top: 2.7rem;
+}
+
+
+.hero button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+.chat-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 111, 182); 
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    width: 200px;
+    height: 45px;  
+    border-radius: 2rem;
+    transition: all 100ms;
+    box-shadow: 0 4px 8px 0 rgba(63, 58, 58, 0.2);
+}
+
+
+.git-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:orange; 
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    width: 200px;
+    height: 45px; 
+    border-radius: 2rem;
+    transition: all 100ms;
+    box-shadow: 0 4px 8px 0 rgba(63, 58, 58, 0.2);
+}
+
+
+
+.chat-button a:hover {
+    color: rgb(252, 111, 182);
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.git-button a:hover {
+    color: orange;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+.arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: transform 1.2s;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+
+}
+
+.arrow-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.arrow-icon:hover {
+    transform: scale(1.2);
+}
+
+
+/* About and Expertise section */
+
+
+.info-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 1rem;
+    background-color: white;
+    width: 50%;
+    height: auto;
+    min-width: 280px;
+    padding: 2rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(63, 58, 58, 0.2);
+    flex: 1;
+}
+
+.info-item img {
+    width: 110px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.info-item.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.info-item.expertise {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-item h2 {
+    font-size: 2rem;
+    color:rgb(252, 111, 182);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.tools {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tools h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    color:rgb(252, 111, 182);
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.web2 .languages p {
+    padding: 0.4rem 1.2rem;
+    background: orange;
+    color: white;
+    border-radius: 2rem;
+    margin-bottom: 0.7rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    box-shadow: 0 4px 8px 0 rgba(63, 58, 58, 0.2);
+    transition: transform .2s;
+    font-size: 1rem;
+
+}
+.web2 {
+    margin-bottom: 8px;
+}
+
+.web2 .languages p:hover {
+    transform: scale(1.1);
+}
+
+
+.web3 .languages p {
+    padding: 0.4rem 1.2rem;
+    background: rgb(244, 104, 118);
+    color: white;
+    border-radius: 2rem;
+    margin-bottom: 0.7rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    box-shadow: 0 4px 8px 0 rgba(63, 58, 58, 0.2);
+    transition: transform .2s;
+    font-size: 1rem;
+}
+
+.web3 .languages p:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Projects section */
+
+
+
+.projects {
+    position: relative;
+    border-radius: 1rem;
+    background-color: white;
+    height: auto;
+    padding: 2rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(63, 58, 58, 0.2);
+}
+
+.projects h2 {
+    font-size: 2rem;
+    color:rgb(252, 111, 182);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    gap: 1.5rem;
+}
+
+.project-item {
+    width: 90%;
+    border-radius: 1rem; 
+    padding: 1rem 1rem;
+    text-align: center;
+    box-shadow: 4px 4px 8px 0 rgba(63, 58, 58, 0.2);
+    transition: transform 0.2s;
+}
+
+.project-item:hover {
+    transform: scale(1.02);
+}
+
+.project-item h4 {
+    color: rgb(252, 111, 182);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.project-item p {
+    font-size: 1rem;
+}
+
+.project-item img {
+    width: 95%;
+    height: auto;
+    border-radius: 1rem;
+    border: 2px solid #f0f0f0;
+    margin-bottom: 1.5rem;
+}
+
+.project-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.project-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(244, 104, 118);
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    width: 160px;
+    height: 30px;  
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(63, 58, 58, 0.2);
+    cursor: pointer;
+    transition: background-image 1.2s ease-in;
+    transition: transform 0.5s;
+}
+
+.project-button a:hover {
+    background-image: linear-gradient(to right, rgb(244, 104, 118),  orange );
+    transform: scale(1.1);
+}
+
+
+/* Contact section */
+
+
+.cta-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-bottom: 2.5rem;
+    margin-top: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.cta-container h2 {
+    font-size: 2rem;
+    color:white;
+    margin-bottom: 1.5rem;
+}
+
+.cta-container img {
+    height: 50px;
+}
+
+.cta-container p {
+    font-size: 1.1rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 1049px) {
+    .hero .message .welcome-copy {
+        font-size: 1.8rem;
+    }
+    .hero .message .intro-copy-start {
+        font-size: 1.6rem;
+    }
+        
+    .hero .message .intro-copy-end, 
+    span {
+        font-size: 1.6rem;
+    }
+        
+    .hero h1 {
+        font-size: 7rem;
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+    .hero {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 720px) {
+    .hero h1 {
+        font-size: 4.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    #menu-icon {
+        display: block;
+        
+    }
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: orange;
+        position: absolute;
+        top: 112px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        box-shadow: 0 8px 6px -6px rgb(212, 119, 6);
+      }
+      .nav-menu.active .nav-item {
+        margin: 1rem 0;
+        text-align: center;
+      }
+}
+
+
+@media only screen and (max-width: 694px) {
+    .arrow-icon {
+        text-align: center;
+    }
+    .info-item {
+        padding: 1.5rem 1.5rem;
+    }
+    .projects {
+        padding: 1.5rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .container {
+        padding: 2rem 1.5rem;
+    }
+    .hero {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .hero-buttons {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 488px) {
+    .hero-message { 
+        font-size: 1.1rem; 
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .project-grid {
+        padding: 0;
+        align-items: center;
+    }
+}
+
+
+
+
+
