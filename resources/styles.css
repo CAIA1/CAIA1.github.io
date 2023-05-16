@@ -280,6 +280,10 @@ span {
     text-align: center;
 }
 
+.signature {
+    font-family: 'La Belle Aurore', cursive;
+    text-decoration: none;
+}
 .info-item.expertise {
     display: flex;
     flex-direction: column;
