@@ -496,7 +496,7 @@ span {
     }
         
     .hero .message .intro-copy-end, 
-    span {
+    .hero .message span {
         font-size: 1.6rem;
     }
         
@@ -524,6 +524,9 @@ span {
         display: block;
         
     }
+    .nav-menu {
+        display: none;
+    }
     .nav-menu.active {
         display: flex;
         flex-direction: column;
@@ -543,7 +546,7 @@ span {
 
 
 @media only screen and (max-width: 694px) {
-    .arrow-icon {
+    .arrow .arrow-icon {
         text-align: center;
     }
     .info-item {
@@ -571,7 +574,7 @@ span {
 }
 
 @media only screen and (max-width: 488px) {
-    .hero-message { 
+    .hero .message { 
         font-size: 1.1rem; 
     }
     h2 {
